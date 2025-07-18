@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz App</h1>
+        <fieldset>
+            <legend>Enter your details</legend>
+            <input type="text" name="username" id="username" required placeholder="Username">
+            <input type="number" name="user-age" id="user-age" required placeholder="Age">
+            <input type="tel" name="phone" id="phone" required placeholder="Phone NUmber">
+            <button id="startBtn">Start Test</button>
+        </fieldset>
+    </div>
+
+    <script>
+        const startBtn = document.querySelector('#startBtn');
+        const nameInput = document.querySelector('#username');
+        const ageInput = document.querySelector('#user-age');
+        const phoneInput = document.querySelector('#phone');
+
+        startBtn.addEventListener('click', () => {
+            event.preventDefault();
+            const age = parseInt(ageInput.value);
+
+            if(nameInput.value === '' || age <= 5 || age >= 100 ){
+                alert('Please enter valid data');
+                return;
+            }
+
+            const user = {
+                username: nameInput.value,
+                age: age,
+                phone: phoneInput.value
+            }
+            console.log(user);
+            sessionStorage.setItem("user", JSON.stringify(user));
+            window.location.href = 'test.html';
+        })
+    </script>
+</body>
+</html>
