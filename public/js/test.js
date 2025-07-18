@@ -74,11 +74,13 @@ function createQuestion(question){
     const button = document.createElement('button');
     button.setAttribute('id', 'save-ans');
     button.innerText = 'Save & Next';
+    if(document.querySelector('#submit-test')){
+        button.disabled = true;
+    }
     button.addEventListener('click', async () => {
         try{
             const answers = div.querySelectorAll('input[name="option"]');
             let answer = null;
-            // console.log(answers);
             for(let i=0; i<answers.length; i++){
                 if(answers[i].checked){
                     answer = answers[i].value;
@@ -100,12 +102,20 @@ function createQuestion(question){
             if (currentIndex !== -1 && currentIndex < radios.length - 1) {
                 const nextRadio = radios[currentIndex + 1];
                 nextRadio.checked = true;
-
                 nextRadio.dispatchEvent(new Event('change'));
             } else {
-                console.log("This is the last question.");
+                const submitBtn = document.createElement('button');
+                submitBtn.innerText = 'Submit Test';
+                submitBtn.setAttribute('id', 'submit-test');
+                submitBtn.addEventListener('click', () => {
+                    sessionStorage.setItem('results', JSON.stringify(results));
+                    window.location.href = 'result.html';
+                });
+                if (!document.getElementById('submit-test')) {
+                    div.appendChild(submitBtn);
+                }
             }
-            }
+        }
         catch(err){
             console.log(err);
         }
