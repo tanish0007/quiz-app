@@ -1,38 +1,42 @@
 [
     {
         "id": 1,
-        "ans": "Narender Modi"
+        "ans": "Paris"
     },
     {
         "id": 2,
-        "ans": "Narender Modi"
+        "ans": "4"
     },
     {
         "id": 3,
-        "ans": "Narender Modi"
+        "ans": "Mars"
     },
     {
         "id": 4,
-        "ans": "Narender Modi"
+        "ans": "William Shakespeare"
     },
     {
         "id": 5,
-        "ans": "Narender Modi"
+        "ans": "Oxygen"
     },
     {
         "id": 6,
-        "ans": "Narender Modi"
+        "ans": "Lion"
     },
     {
         "id": 7,
-        "ans": "Narender Modi"
+        "ans": "Blue Whale"
     },
     {
         "id": 8,
-        "ans": "Narender Modi"
+        "ans": "JavaScript"
     },
     {
         "id": 9,
-        "ans": "Narender Modi"
+        "ans": "7"
+    },
+    {
+        "id": 10,
+        "ans": "Piano"
     }
 ]

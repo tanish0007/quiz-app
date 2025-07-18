@@ -1,102 +1,102 @@
 [
     {
         "id": 1,
-        "que": "Who is prime minister of india ?",
+        "que": "What is the capital of France?",
         "options": [
-            "Narender Modi",
-            "Manmohan Signh",
-            "Sheetal Bidhan",
-            "Amit Saini"
+            "Paris",
+            "Berlin",
+            "Madrid",
+            "Rome"
         ]
     },
-        {
+    {
         "id": 2,
-        "que": "Who are you",
+        "que": "What is 2 + 2?",
         "options": [
-            "Narender Modi",
-            "Tanish Jangra",
-            "Sheetal Bidhan",
-            "Amit Saini"
+            "3",
+            "4",
+            "5",
+            "22"
         ]
     },
-        {
+    {
         "id": 3,
-        "que": "Who is prime minister of india ?",
+        "que": "Which planet is known as the Red Planet?",
         "options": [
-            "Narender Modi",
-            "Tanish Jangra",
-            "Sheetal Bidhan",
-            "Amit Saini"
+            "Mars",
+            "Earth",
+            "Jupiter",
+            "Venus"
         ]
     },
-        {
+    {
         "id": 4,
-        "que": "Who is prime minister of india ?",
+        "que": "Who wrote 'Romeo and Juliet'?",
         "options": [
-            "Narender Modi",
-            "Tanish Jangra",
-            "Sheetal Bidhan",
-            "Amit Saini"
+            "William Shakespeare",
+            "Charles Dickens",
+            "Leo Tolstoy",
+            "Mark Twain"
         ]
     },
-        {
+    {
         "id": 5,
-        "que": "Who is prime minister of india ?",
+        "que": "Which element has the chemical symbol 'O'?",
         "options": [
-            "Narender Modi",
-            "Tanish Jangra",
-            "Sheetal Bidhan",
-            "Amit Saini"
+            "Oxygen",
+            "Gold",
+            "Iron",
+            "Hydrogen"
         ]
     },
-        {
+    {
         "id": 6,
-        "que": "Who is prime minister of india ?",
+        "que": "Which animal is known as the King of the Jungle?",
         "options": [
-            "Narender Modi",
-            "Tanish Jangra",
-            "Sheetal Bidhan",
-            "Amit Saini"
+            "Lion",
+            "Tiger",
+            "Elephant",
+            "Leopard"
         ]
     },
-        {
+    {
         "id": 7,
-        "que": "Who is prime minister of india ?",
+        "que": "What is the largest mammal?",
         "options": [
-            "Narender Modi",
-            "Tanish Jangra",
-            "Sheetal Bidhan",
-            "Amit Saini"
+            "Blue Whale",
+            "Elephant",
+            "Giraffe",
+            "Hippopotamus"
         ]
     },
-        {
+    {
         "id": 8,
-        "que": "Who is prime minister of india ?",
+        "que": "Which programming language is primarily used for web development?",
         "options": [
-            "Narender Modi",
-            "Tanish Jangra",
-            "Sheetal Bidhan",
-            "Amit Saini"
+            "JavaScript",
+            "Python",
+            "C++",
+            "Java"
         ]
     },
-        {
+    {
         "id": 9,
-        "que": "Who is prime minister of india ?",
+        "que": "How many continents are there?",
         "options": [
-            "Narender Modi",
-            "Tanish Jangra",
-            "Sheetal Bidhan",
-            "Amit Saini"
+            "7",
+            "6",
+            "5",
+            "8"
         ]
     },
-        {
+    {
         "id": 10,
-        "que": "Who is prime minister of india ?",
+        "que": "Which instrument has keys, pedals, and strings?",
         "options": [
-            "Narender Modi",
-            "Tanish Jangra",
-            "Sheetal Bidhan",
-            "Amit Saini"
+            "Piano",
+            "Guitar",
+            "Drums",
+            "Flute"
         ]
     }
 ]

@@ -8,6 +8,33 @@ const PORT = 8080;
 app.use(express.json())
 app.use(express.static('public'));
 
+app.get('/question/:id', (req, res) => {
+    const id = req.params.id;
+
+    FS.readFile(__dirname+'/test.json', (err, data) => {
+        if(err){
+            return res.status(500).json({
+                "sucsess": false,
+                "error": "No Data"
+            })
+        }
+        const response = JSON.parse(data);
+        const question = response.find(elem => elem.id === id);
+
+        if(!question){
+            return res.status(404).json({
+            "sucess": false,
+            "error": "Not Found"
+        })
+        }
+        
+        return res.status(200).json({
+            "sucess": true,
+            question
+        })
+    })
+})
+
 app.get('/testData', (req, res) => {
     FS.readFile(__dirname+'/test.json', (err, data) => {
         if(err){
@@ -18,9 +45,9 @@ app.get('/testData', (req, res) => {
         }
         const response = JSON.parse(data);
         let testData = [];
-        let single ={};
 
         for(let i=0; i<response.length; i++){
+            let single ={};
             single.id = response[i].id;
             single.que = response[i].que;
             single.options = response[i].options
