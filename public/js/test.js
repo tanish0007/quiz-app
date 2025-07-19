@@ -5,7 +5,7 @@ if(!user){
 
 const results = [];
 document.querySelector('.user-name').innerHTML = user.username;
-document.querySelector('.user-age').innerHTML = user.age;
+document.querySelector('.user-age').innerHTML = `Age: ${user.age}`;
 
 //------------------ fetch all questions -------------------
 async function fetchQuestions(){
@@ -64,10 +64,10 @@ function createQuestion(question){
     div.innerHTML = `
         <p id="${question.id}" class="que">${question.que}</p>
         <div class="options">
-            <input type="radio" id="A-${question.id}" value=${question.options[0]} name="option"> <label for="A-${question.id}">${question.options[0]}</label>
-            <input type="radio" id="B-${question.id}" value=${question.options[1]} name="option"> <label for="B-${question.id}">${question.options[1]}</label>
-            <input type="radio" id="C-${question.id}" value=${question.options[2]} name="option"> <label for="C-${question.id}">${question.options[2]}</label>
-            <input type="radio" id="D-${question.id}" value=${question.options[3]} name="option"> <label for="D-${question.id}">${question.options[3]}</label>
+            <label for="A-${question.id}"> <input type="radio" id="A-${question.id}" value=${question.options[0]} name="option"> ${question.options[0]}</label>
+            <label for="B-${question.id}"> <input type="radio" id="B-${question.id}" value=${question.options[1]} name="option"> ${question.options[1]}</label>
+            <label for="C-${question.id}"> <input type="radio" id="C-${question.id}" value=${question.options[2]} name="option"> ${question.options[2]}</label>
+            <label for="D-${question.id}"> <input type="radio" id="D-${question.id}" value=${question.options[3]} name="option"> ${question.options[3]}</label>
         </div>
     `;
 
