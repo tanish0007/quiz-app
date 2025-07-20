@@ -62,12 +62,12 @@ function createQuestion(question){
     div.setAttribute('id', `question-${question.id}`);
     div.style.display = 'none';
     div.innerHTML = `
-        <p id="${question.id}" class="que">${question.que}</p>
+        <p id="${question.id}" class="que">Que ${question.id}: ${question.que}</p>
         <div class="options">
-            <label for="A-${question.id}"> <input type="radio" id="A-${question.id}" value=${question.options[0]} name="option"> ${question.options[0]}</label>
-            <label for="B-${question.id}"> <input type="radio" id="B-${question.id}" value=${question.options[1]} name="option"> ${question.options[1]}</label>
-            <label for="C-${question.id}"> <input type="radio" id="C-${question.id}" value=${question.options[2]} name="option"> ${question.options[2]}</label>
-            <label for="D-${question.id}"> <input type="radio" id="D-${question.id}" value=${question.options[3]} name="option"> ${question.options[3]}</label>
+            <label for="A-${question.id}"> <input type="radio" id="A-${question.id}" value='${question.options[0]}' name="option"> ${question.options[0]}</label>
+            <label for="B-${question.id}"> <input type="radio" id="B-${question.id}" value='${question.options[1]}' name="option"> ${question.options[1]}</label>
+            <label for="C-${question.id}"> <input type="radio" id="C-${question.id}" value='${question.options[2]}' name="option"> ${question.options[2]}</label>
+            <label for="D-${question.id}"> <input type="radio" id="D-${question.id}" value='${question.options[3]}' name="option"> ${question.options[3]}</label>
         </div>
     `;
 

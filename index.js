@@ -99,6 +99,31 @@ app.post('/verify', (req, res) => {
     })
 })
 
+app.get('/allAnswers', (req, res) => {
+    FS.readFile(__dirname+'/answers.json', (err, data) => {
+        if(err){
+            return res.status(500).json({
+                "sucsess": false,
+                "error": "No Data"
+            })
+        }
+        const response = JSON.parse(data);
+        let answers = [];
+
+        for(let i=0; i<response.length; i++){
+            let singleAns ={};
+            singleAns.id = response[i].id;
+            singleAns.ans = response[i].ans;
+
+            answers.push(singleAns)
+        }
+        return res.status(200).json({
+            "sucess": true,
+            answers
+        })
+    })
+})
+
 app.listen(PORT, () => {
     console.log(`Server is runnning pn http://localhost:${PORT}`);
 })
